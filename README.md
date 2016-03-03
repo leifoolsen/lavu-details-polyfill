@@ -19,7 +19,7 @@ The polyfill is based on the spec for the details element.
 If you'd like to use the details element and don't know where to start, take a look at this tutorial 
 [The details and summary elements](http://html5doctor.com/the-details-and-summary-elements/) at the html5doctor, 
 [read the tests](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/test/index.spec.js) 
-or [try the demo](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/src/snippets/details-element-demo.html). 
+or [try the demo](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/src/snippets/). 
 
 ## Features
 * `open` attribute support
