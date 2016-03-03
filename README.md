@@ -17,8 +17,9 @@ The polyfill is based on the spec for the details element.
 * [HTML/Elements/details Wiki](http://www.w3.org/wiki/HTML/Elements/details)
 
 If you'd like to use the details element and don't know where to start, take a look at this tutorial 
-[The details and summary elements](http://html5doctor.com/the-details-and-summary-elements/) at the html5doctor - 
-or [read the tests](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/test/index.spec.js). 
+[The details and summary elements](http://html5doctor.com/the-details-and-summary-elements/) at the html5doctor, 
+[read the tests](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/test/index.spec.js) 
+or [try the demo](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/src/snippets/details-element-demo.html). 
 
 ## Features
 * `open` attribute support
@@ -34,7 +35,10 @@ $ npm install --save lavu-details-polyfill
 ## Usage
 Use it in your page
 ```html
-<script src="node_modules/lavu-details-polyfill/dist/lavu-details-polyfill.js"></script>
+<script type="text/javascript" 
+        src="node_modules/lavu-details-polyfill/lib/lavu-details-polyfill.min.js"
+        charset="utf-8">
+</script>
 ```
 
 ... or require the polyfill

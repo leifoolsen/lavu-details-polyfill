@@ -4,8 +4,8 @@
   "description": "This polyfill provides support for the <details> element across all modern browsers.",
   "main": "src/index.js",
   "scripts": {
-    "build": "echo \"Error: no build specified\" && exit 1",
-    "dev": "echo \"Error: no dev specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack --mode=build",
+    "dev": "./node_modules/.bin/webpack --progress --colors --watch --mode=dev",
     "lint": "./node_modules/.bin/eslint ./src",
     "jshint": "./node_modules/.bin/jshint ./src",
     "test": "./node_modules/.bin/mocha  -w --opts ./mocha.opts './test/**/*.spec.js'",
