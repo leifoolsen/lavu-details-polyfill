@@ -34,12 +34,12 @@ Use it in your page
 <script src="node_modules/lavu-details-polyfill/dist/lavu-details-polyfill.js"></script>
 ```
 
-Or require the polyfill
+... or require the polyfill
 ```javascript
 var polyfillDetails = require('lavu-details-polyfill');
 ```
 
-Or import the polyfill
+... or import the polyfill
 ```javascript
 import { polyfillDetails } from 'lavu-details-polyfill';
 ```
