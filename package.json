@@ -1,0 +1,23 @@
+{
+  "name": "lavu-details-polyfill",
+  "version": "1.0.0",
+  "description": "This polyfill provides support for the <details> element across all modern browsers.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leifoolsen/lavu-details-polyfill.git"
+  },
+  "keywords": [
+    "details",
+    "polyfill"
+  ],
+  "author": "Leif Olsen <leif.o.olsen@gmail.com> (https://github.com/leifoolsen)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/leifoolsen/lavu-details-polyfill/issues"
+  },
+  "homepage": "https://github.com/leifoolsen/lavu-details-polyfill#readme"
+}
