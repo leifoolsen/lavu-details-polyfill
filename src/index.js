@@ -122,7 +122,7 @@ function injectCSS() {
     style.id = 'details-polyfill-css';
     style.textContent = css
       .replace(/(\/\*([^*]|(\*+[^*\/]))*\*+\/)/gm, '') // remove comments from CSS, see: http://www.sitepoint.com/3-neat-tricks-with-regular-expressions/
-      .replace(/\s/gm, ' ');                        // replaces consecutive spaces with a single space
+      .replace(/\s/gm, ' ');                           // replaces consecutive spaces with a single space
 
     // WebKit hack
     style.appendChild(document.createTextNode(''));

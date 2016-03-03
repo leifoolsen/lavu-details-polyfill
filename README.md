@@ -19,7 +19,7 @@ or [read the tests](https://github.com/leifoolsen/lavu-details-polyfill/blob/mas
 
 ## Features
 * `open` attribute support
-* fires `click` event when open state changed
+* fires `click` event when open state changes
 * keyboard and ARIA-friendly
 * fully customisable via CSS
 
@@ -55,6 +55,67 @@ Where ```content``` is the parent node of the loaded HTML fragment.
 
 
 ## Notes
+The polyfill provides a minimal CSS meant to mimic the default unstyled browser look which
+you can override in your own CSS/SASS/LESS module.
+```CSS
+details, details>summary {
+  display: block;
+}
+details > summary {
+  min-height: 1.4em;
+  padding: 0.125em;
+}
+details > summary:before {
+  content:"►";
+  font-size: 1em;
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 0.3em;
+  -webkit-transform-origin: 0.4em 0.6em;
+     -moz-transform-origin: 0.4em 0.6em;
+      -ms-transform-origin: 0.4em 0.6em;
+          transform-origin: 0.4em 0.6em;
+}
+details[open] > summary:before {
+  content:"▼"
+}
+details > *:not(summary) {
+  display: none;
+  opacity: 0;
+}
+details[open] > *:not(summary) {
+  display: block;
+  opacity: 1;
+}
+```
+
+Semantic (correct) markup example:
+```html
+<details role="group" open>
+  <summary role="button">Show/Hide me</summary>
+  <p>Some content ..... etc.</p>
+</details>
+```
+
+There is no guarantee that the browser's implementation of the ```<details>``` element will
+respect it's child elements layout when toggeling the details. To preserve the child elements layout,
+you should always wrap the child elements inside a block element, e.g. a ```<div>```.
+
+```html
+<style>
+  .inline-element { display : inline-block; }
+</style
+<details role="group">
+  <summary role="button">Show/Hide me</summary>
+  <div>
+    <div class="inline-element">
+      <p>Some content ..... etc.</p>
+    </div>
+  </div>
+</details>
+```
 
 ### Credits: The ```<select>``` polyfill is partly based on/inspired by the following sources:
 * https://github.com/jordanaustin/Details-Expander
@@ -68,8 +129,3 @@ Where ```content``` is the parent node of the loaded HTML fragment.
 
 ## Licence
 [MIT](http://www.opensource.org/licenses/mit-license.php)
-
-
-
-
-
