@@ -2,7 +2,7 @@
 import 'babel-polyfill';
 import requireUncached from 'require-uncached';
 import jsdomify from 'jsdomify';
-import { expect, assert } from 'chai';
+import { assert } from 'chai';
 import sinon from 'sinon';
 import { qs, qsa } from './helpers/domHelpers';
 
