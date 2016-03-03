@@ -4,9 +4,12 @@
 
 **WORK IN PROGRESS ....**
 
-The ```<details>``` element specifies additional details that the user can view or hide on demand. The ```<summary>``` element defines a visible heading for the ```<details>``` element. The heading can be clicked to view/hide the details.
+The ```<details>``` element specifies additional details that the user can view or hide on demand. 
+The ```<summary>``` element defines a visible heading for the ```<details>``` element. 
+The heading can be clicked to show/hide the details.
 
-The ```<details>``` element currently has very limited cross-browser support. This polyfill provides support for the &lt;detail&gt; element across all modern browsers.
+The ```<details>``` element currently has very limited cross-browser support. 
+This polyfill provides support for the &lt;detail&gt; element across all modern browsers.
 
 The polyfill is based on the spec for the details element.
 * [WhatWG, 4.11.1 The details element](http://www.whatwg.org/specs/web-apps/current-work/multipage/interactive-elements.html)
@@ -46,7 +49,8 @@ import { polyfillDetails } from 'lavu-details-polyfill';
 
 The script uses the ```load``` event to polyfill the ```<details>``` elements.
 
-If you load HTML fragments dynamically, e.g. in a single page application, then you must call the polyfill after loading the HTML.
+If you load HTML fragments dynamically, e.g. in a single page application, 
+then you must call the polyfill after loading the HTML.
 ```javascript
 polyfillDetails(content);
 ```
@@ -55,8 +59,8 @@ Where ```content``` is the parent node of the loaded HTML fragment.
 
 
 ## Notes
-The polyfill provides a minimal CSS meant to mimic the default unstyled browser look which
-you can override in your own CSS/SASS/LESS module.
+The polyfill provides a minimal CSS meant to mimic the default unstyled 
+browser look which you can override in your own CSS/SASS/LESS module.
 ```CSS
 details, details>summary {
   display: block;
