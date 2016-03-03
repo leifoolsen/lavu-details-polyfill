@@ -22,9 +22,8 @@ If you'd like to use the details element and don't know where to start, take a l
 or [try the demo](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/src/snippets/). 
 
 ## Features
-* `open` attribute support
-* fires `click` event when open state changes
 * keyboard and ARIA-friendly
+* fires `click` event when open state changes
 * fully customisable via CSS
 
 ## Install
