@@ -40,7 +40,7 @@ describe('details', () => {
     </details>
   </details>
 
-  <details id="it-should-have-a-summary-element">
+  <details id="it-provides-a-summary-element">
    <p>A paragraph but no summary element</p>
   </details>
 
@@ -103,9 +103,9 @@ describe('details', () => {
     }
   });
 
-  it('adds a summary element if not present', () => {
+  it('provides a summary element if not present', () => {
     if(!nativeSupport) {
-      assert.equal(qs('#it-should-have-a-summary-element').firstElementChild.nodeName.toLowerCase(), 'summary');
+      assert.equal(qs('#it-provides-a-summary-element').firstElementChild.nodeName.toLowerCase(), 'summary');
     }
   });
 

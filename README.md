@@ -113,7 +113,7 @@ you should always wrap the child elements inside a block element, e.g. a ```<div
 ```html
 <style>
   .inline-element { display : inline-block; }
-</style
+</style>
 <details role="group">
   <summary role="button">Show/Hide me</summary>
   <div>
