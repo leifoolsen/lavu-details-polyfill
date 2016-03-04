@@ -1,6 +1,5 @@
 {
   "name": "lavu-details-polyfill",
-  "version": "0.0.3-beta.1",
   "description": "This polyfill provides support for the <details> element across all modern browsers.",
   "main": "src/index.js",
   "scripts": {
@@ -10,11 +9,12 @@
     "lint": "./node_modules/.bin/eslint ./src",
     "jshint": "./node_modules/.bin/jshint ./src",
     "test": "./node_modules/.bin/mocha  -w --opts ./mocha.opts './test/**/*.spec.js'",
-    "test:coverage": "./node_modules/.bin/babel-node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --include ./src/**/*.js -- --opts ./mocha.opts  -r .istanbul-mocha.config.js './test/**/*.spec.js'"
+    "test:coverage": "./node_modules/.bin/babel-node ./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha --include ./src/**/*.js -- --opts ./mocha.opts  -r .istanbul-mocha.config.js './test/**/*.spec.js'",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leifoolsen/lavu-details-polyfill.git"
+    "url": "https://github.com/leifoolsen/lavu-details-polyfill.git"
   },
   "keywords": [
     "details",
@@ -49,6 +49,7 @@
     "require-uncached": "1.0.2",
     "sinon": "1.17.3",
     "webpack": "1.12.14",
-    "yargs": "4.2.0"
+    "yargs": "4.2.0",
+    "semantic-release": "^4.3.5"
   }
 }
