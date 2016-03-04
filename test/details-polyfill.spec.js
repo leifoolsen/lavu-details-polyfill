@@ -9,7 +9,7 @@ import { qs, qsa } from './helpers/domHelpers';
 const VK_ENTER = 13;
 const VK_SPACE = 32;
 
-describe('details', () => {
+describe('details polyfill', () => {
 
   const fixture = `
 <!DOCTYPE html>
@@ -103,13 +103,13 @@ describe('details', () => {
     }
   });
 
-  it('provides a summary element if not present', () => {
+  it('provides a summary element if none is present', () => {
     if(!nativeSupport) {
       assert.equal(qs('#it-provides-a-summary-element').firstElementChild.nodeName.toLowerCase(), 'summary');
     }
   });
 
-  it('should polyfill successfully when a new details tag is appended to the DOM', () => {
+  it('polyfills successfully when a new details tag is appended to the DOM', () => {
     if(!nativeSupport) {
       let hook = qs('#hook');
       hook.innerHTML = fragment;

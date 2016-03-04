@@ -4,6 +4,7 @@
   "description": "This polyfill provides support for the <details> element across all modern browsers.",
   "main": "src/index.js",
   "scripts": {
+    "prebuild": "npm run lint && npm run test:coverage && rm -rf lib",
     "build": "./node_modules/.bin/webpack --mode=build",
     "dev": "./node_modules/.bin/webpack --progress --colors --watch --mode=dev",
     "lint": "./node_modules/.bin/eslint ./src",
