@@ -42,12 +42,12 @@ Use it in your page
 
 ... or require the polyfill
 ```javascript
-var polyfillDetails = require('lavu-details-polyfill');
+var polyfillDetails = require('lavu-details-polyfill/lib/lavu-details-polyfill');
 ```
 
 ... or import the polyfill
 ```javascript
-import { polyfillDetails } from 'lavu-details-polyfill';
+import { polyfillDetails } from 'lavu-details-polyfill/lib/lavu-details-polyfill';
 ```
 
 The script uses the ```load``` event to polyfill the ```<details>``` elements.
@@ -63,7 +63,8 @@ Where ```content``` is the parent node of the loaded HTML fragment.
 
 ## Notes
 The polyfill provides a minimal CSS meant to mimic the default unstyled 
-browser look which you can override in your own CSS/SASS/LESS module.
+browser look which you can override in your own CSS/SASS/LESS module. [
+Code that overrides the default CSS is provided in the snippets example](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/src/snippets/details-element-demo.html).
 ```CSS
 details, details>summary {
   display: block;
