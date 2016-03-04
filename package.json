@@ -1,6 +1,6 @@
 {
   "name": "lavu-details-polyfill",
-  "version": "0.0.1",
+  "version": "0.0.3-alpha.1",
   "description": "This polyfill provides support for the <details> element across all modern browsers.",
   "main": "src/index.js",
   "scripts": {
