@@ -32,7 +32,7 @@ $ npm install --save lavu-details-polyfill
 ```
 
 ## Usage
-Use it in your page
+**Use it in your page**
 ```html
 <script type="text/javascript" 
         src="node_modules/lavu-details-polyfill/lib/lavu-details-polyfill.min.js"
@@ -40,12 +40,12 @@ Use it in your page
 </script>
 ```
 
-... or require the polyfill
+**... or require the polyfill**
 ```javascript
 var polyfillDetails = require('lavu-details-polyfill/lib/lavu-details-polyfill');
 ```
 
-... or import the polyfill
+**... or import the polyfill**
 ```javascript
 import { polyfillDetails } from 'lavu-details-polyfill/lib/lavu-details-polyfill';
 ```
