@@ -53,6 +53,16 @@ var polyfillDetails = require('lavu-details-polyfill/lib/lavu-details-polyfill')
 import { polyfillDetails } from 'lavu-details-polyfill/lib/lavu-details-polyfill';
 ```
 
+### Start using it
+```html
+<details role="group">
+  <summary role="button">Show/Hide me</summary>
+  <section>
+    <p>Some content.</p>
+  </section>
+</details>
+```
+
 The script uses the ```load``` event to polyfill the ```<details>``` elements.
 
 If you load HTML fragments dynamically, e.g. in a single page application, 
@@ -102,17 +112,10 @@ details[open] > *:not(summary) {
 }
 ```
 
-Semantic (correct) markup example:
-```html
-<details role="group" open>
-  <summary role="button">Show/Hide me</summary>
-  <p>Some content ..... etc.</p>
-</details>
-```
-
-There is no guarantee that the browser's implementation of the ```<details>``` element will
+The polyfill does not preserve the child elements layout when toggeling the details.
+Also, there is no guarantee that a browser's native implementation of the ```<details>``` element will
 respect it's child elements layout when toggeling the details. To preserve the child elements layout,
-you should always wrap the child elements inside a block element, e.g. a ```<div>```.
+you should always wrap the child elements inside a block element, e.g. ```<div>, <article>, <section>``` etc.
 
 ```html
 <style>
@@ -120,11 +123,11 @@ you should always wrap the child elements inside a block element, e.g. a ```<div
 </style>
 <details role="group">
   <summary role="button">Show/Hide me</summary>
-  <div>
+  <article>
     <div class="inline-element">
       <p>Some content ..... etc.</p>
     </div>
-  </div>
+  </article>
 </details>
 ```
 
