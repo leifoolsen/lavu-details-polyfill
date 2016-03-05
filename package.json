@@ -1,8 +1,8 @@
 {
   "name": "lavu-details-polyfill",
   "version": "0.0.0-semantically-released",
-  "description": "This polyfill provides support for the <details> element across all modern browsers.",
-  "main": "src/index.js",
+  "description": "A polyfill that provides support for the <details> element across all modern browsers.",
+  "main": "lib/index.js",
   "scripts": {
     "commit": "git-cz",
     "dev": "./node_modules/.bin/webpack --progress --colors --watch --mode=dev",
@@ -10,15 +10,15 @@
     "jshint": "./node_modules/.bin/jshint ./src",
     "test": "./node_modules/.bin/mocha  -w --opts ./mocha.opts './test/**/*.spec.js'",
     "test:coverage": "./node_modules/.bin/babel-node ./node_modules/.bin/istanbul cover --root ./src ./node_modules/.bin/_mocha -- --opts ./mocha.opts  -r .istanbul-mocha.config.js './test/**/*.spec.js'",
-    "pre-build": "npm run test:coverage && rm -rf lib",
-    "build": "./node_modules/.bin/webpack --mode=build",
     "check-coverage": "./node_modules/.bin/istanbul check-coverage --statements 70 --branches 70 --functions 70 --lines 70",
     "report-coverage": "cat ./coverage/lcov.info | ./node_modules/.bin/codecov",
+    "prebuild": "rm -rf lib && ./node_modules/.bin/webpack",
+    "build": "./node_modules/.bin/webpack --mode=build",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "config": {
     "ghooks": {
-      "pre-commit": "npm run pre-build && npm run build && npm run check-coverage"
+      "pre-commit": "npm run build && npm run check-coverage"
     },
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"

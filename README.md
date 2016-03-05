@@ -1,9 +1,10 @@
 # Details Element Polyfill
 
-<img src="./etc/details-element.png"/>
+![details](./etc/details-element.png)
 
 [![travis build](https://img.shields.io/travis/leifoolsen/lavu-details-polyfill.svg?style=flat-square)](https://travis-ci.org/leifoolsen/lavu-details-polyfill)
 [![codecov coverage](https://img.shields.io/codecov/c/github/leifoolsen/lavu-details-polyfill.svg?style=flat-square)](https://codecov.io/github/leifoolsen/lavu-details-polyfill)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 [![version](https://img.shields.io/npm/v/lavu-details-polyfill.svg?style=flat-square)](http://npm.im/lavu-details-polyfill)
 
 The ```<details>``` element specifies additional details that the user can view or hide on demand. 
@@ -138,4 +139,4 @@ you should always wrap the child elements inside a block element, e.g. a ```<div
 * https://www.smashingmagazine.com/2014/11/complete-polyfill-html5-details-element/
 
 ## Licence
-[MIT](http://www.opensource.org/licenses/mit-license.php)
+[MIT Licence](http://www.opensource.org/licenses/mit-license.php) 2015 © Leif Olsen

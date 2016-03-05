@@ -3,7 +3,7 @@ var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 var path = require('path');
 var env = require('yargs').argv.mode;
 
-var libraryName = 'lavu-details-polyfill';
+var libraryName = 'index';
 
 var plugins = [], outputFile;
 
