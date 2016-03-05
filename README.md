@@ -2,6 +2,10 @@
 
 <img src="./etc/details-element.png"/>
 
+[![travis build](https://img.shields.io/travis/leifoolsen/lavu-details-polyfill.svg?style=flat-square)](https://travis-ci.org/leifoolsen/lavu-details-polyfill)
+[![codecov coverage](https://img.shields.io/codecov/c/github/leifoolsen/lavu-details-polyfill.svg?style=flat-square)](https://codecov.io/github/leifoolsen/lavu-details-polyfill)
+[![version](https://img.shields.io/npm/v/lavu-details-polyfill.svg?style=flat-square)](http://npm.im/lavu-details-polyfill)
+
 The ```<details>``` element specifies additional details that the user can view or hide on demand. 
 The ```<summary>``` element defines a visible heading for the ```<details>``` element. 
 The heading can be clicked to show/hide the details.
