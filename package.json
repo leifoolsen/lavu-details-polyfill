@@ -4,6 +4,7 @@
   "description": "This polyfill provides support for the <details> element across all modern browsers.",
   "main": "src/index.js",
   "scripts": {
+    "commit": "git-cz",
     "prebuild": "npm run lint && npm run test:coverage && rm -rf lib",
     "build": "./node_modules/.bin/webpack --mode=build",
     "dev": "./node_modules/.bin/webpack --progress --colors --watch --mode=dev",
@@ -41,6 +42,8 @@
     "cz-conventional-changelog": "1.1.5",
     "eslint": "2.2.0",
     "eslint-loader": "1.3.0",
+    "gulp": "3.9.1",
+    "gulp-git": "1.7.0",
     "ignore-styles": "1.2.0",
     "istanbul": "1.0.0-alpha.2",
     "jsdom": "8.1.0",
@@ -52,5 +55,13 @@
     "sinon": "1.17.3",
     "webpack": "1.12.14",
     "yargs": "4.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "czConfig": {
+    "path": "./node_modules/cz-conventional-changelog"
   }
 }
