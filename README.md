@@ -2,8 +2,6 @@
 
 <img src="./etc/details-element.png"/>
 
-**WORK IN PROGRESS ....**
-
 The ```<details>``` element specifies additional details that the user can view or hide on demand. 
 The ```<summary>``` element defines a visible heading for the ```<details>``` element. 
 The heading can be clicked to show/hide the details.
