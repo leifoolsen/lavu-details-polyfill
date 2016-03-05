@@ -58,14 +58,13 @@
     "yargs": "4.2.0"
   },
   "config": {
+    "ghhoks": {
+      "pre-commit": "npm run test:coverage"
+    },
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
-    },
-    "ghhoks": {
-      "pre-commit": "npm-run test:coverage"
     }
   },
-
   "czConfig": {
     "path": "./node_modules/cz-conventional-changelog"
   }
