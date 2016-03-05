@@ -65,6 +65,7 @@
       "pre-commit": "npm-run test:coverage"
     }
   },
+
   "czConfig": {
     "path": "./node_modules/cz-conventional-changelog"
   }
