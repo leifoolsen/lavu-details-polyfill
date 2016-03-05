@@ -58,7 +58,7 @@
     "yargs": "4.2.0"
   },
   "config": {
-    "ghhoks": {
+    "ghooks": {
       "pre-commit": "npm run test:coverage"
     },
     "commitizen": {
