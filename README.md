@@ -12,7 +12,7 @@ The ```<summary>``` element defines a visible heading for the ```<details>``` el
 The heading can be clicked to show/hide the details.
 
 The ```<details>``` element currently has very limited cross-browser support. 
-This polyfill provides support for the &lt;detail&gt; element across all modern browsers.
+This polyfill provides support for the &lt;details&gt; element across all modern browsers.
 
 The polyfill is based on the spec for the details element.
 * [WhatWG, 4.11.1 The details element](http://www.whatwg.org/specs/web-apps/current-work/multipage/interactive-elements.html)
@@ -21,8 +21,8 @@ The polyfill is based on the spec for the details element.
 
 If you'd like to use the details element and don't know where to start, take a look at this tutorial 
 [The details and summary elements](http://html5doctor.com/the-details-and-summary-elements/) at the html5doctor, 
-[read the tests](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/test/index.spec.js) 
-or [try the demo](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/src/snippets/). 
+[read the tests](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/test/details-polyfill.spec.js) 
+or [try out the demo](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/src/snippets/). 
 
 ## Features
 * keyboard and ARIA-friendly
