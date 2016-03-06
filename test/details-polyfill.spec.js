@@ -112,7 +112,7 @@ describe('details polyfill', () => {
   it('polyfills successfully when a new details tag is appended to the DOM', () => {
     if(!nativeSupport) {
       let hook = qs('#hook');
-      hook.innerHTML = fragment;
+      hook.insertAdjacentHTML('beforeend', fragment);
       Details.polyfillDetails(hook);
       [...qsa('details', hook)].forEach(details => {
         assert.isTrue(details.classList.contains('is-polyfilled'), 'Expected details element to have class "is-polyfilled"');
