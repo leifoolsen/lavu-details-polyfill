@@ -38,19 +38,19 @@ $ npm install --save lavu-details-polyfill
 **Use it in your page**
 ```html
 <script type="text/javascript" 
-        src="node_modules/lavu-details-polyfill/lib/lavu-details-polyfill.min.js"
+        src="node_modules/lavu-details-polyfill/lib/index.min.js"
         charset="utf-8">
 </script>
 ```
 
 **... or require the polyfill**
 ```javascript
-var polyfillDetails = require('lavu-details-polyfill/lib/lavu-details-polyfill');
+var polyfillDetails = require('lavu-details-polyfill');
 ```
 
 **... or import the polyfill**
 ```javascript
-import { polyfillDetails } from 'lavu-details-polyfill/lib/lavu-details-polyfill';
+import { polyfillDetails } from 'lavu-details-polyfill';
 ```
 
 ### Start using it

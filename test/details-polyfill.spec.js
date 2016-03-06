@@ -124,7 +124,7 @@ describe('details polyfill', () => {
     if(!nativeSupport) {
       Details.polyfillDetails();
       let isPolyfilled = Details.polyfillDetails();
-      assert.isFalse(isPolyfilled);
+      assert.isFalse(isPolyfilled, 'Expected tol polyfill only once');
     }
   });
 
