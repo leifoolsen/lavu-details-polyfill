@@ -142,4 +142,4 @@ you should always wrap the child elements inside a block element, e.g. ```<div>,
 * https://www.smashingmagazine.com/2014/11/complete-polyfill-html5-details-element/
 
 ## Licence
-[MIT Licence](http://www.opensource.org/licenses/mit-license.php) 2015 © Leif Olsen
+[MIT Licence](http://www.opensource.org/licenses/mit-license.php) 2016 © Leif Olsen
