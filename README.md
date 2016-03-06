@@ -131,7 +131,7 @@ you should always wrap the child elements inside a block element, e.g. ```<div>,
 </details>
 ```
 
-### Credits: The ```<select>``` polyfill is partly based on/inspired by the following sources:
+### Credits: The ```<details>``` polyfill is partly based on/inspired by the following sources:
 * https://github.com/jordanaustin/Details-Expander
 * https://github.com/chemerisuk/better-details-polyfill
 * http://codepen.io/stevef/pen/jiCBE
