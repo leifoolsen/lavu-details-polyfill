@@ -7,11 +7,11 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg?style=flat-square)](https://github.com/semantic-release/semantic-release)
 [![version](https://img.shields.io/npm/v/lavu-details-polyfill.svg?style=flat-square)](http://npm.im/lavu-details-polyfill)
 
-The ```<details>``` element specifies additional details that the user can view or hide on demand. 
-The ```<summary>``` element defines a visible heading for the ```<details>``` element. 
+The `<details>` element specifies additional details that the user can view or hide on demand. 
+The `<summary>` element defines a visible heading for the `<details>` element. 
 The heading can be clicked to show/hide the details.
 
-The ```<details>``` element currently has very limited cross-browser support. 
+The `<details>` element currently has very limited cross-browser support. 
 This polyfill provides support for the &lt;details&gt; element across all modern browsers.
 
 The polyfill is based on the spec for the details element.
@@ -22,7 +22,7 @@ The polyfill is based on the spec for the details element.
 If you'd like to use the details element and don't know where to start, take a look at this tutorial 
 [The details and summary elements](http://html5doctor.com/the-details-and-summary-elements/) at the html5doctor, 
 [read the tests](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/test/details-polyfill.spec.js) 
-or [try out the demo](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/src/snippets/). 
+or clone this repo and [try out the demo](https://github.com/leifoolsen/lavu-details-polyfill/blob/master/src/snippets/). 
 
 ## Features
 * keyboard and ARIA-friendly
@@ -63,7 +63,7 @@ import { polyfillDetails } from 'lavu-details-polyfill';
 </details>
 ```
 
-The script uses the ```load``` event to polyfill the ```<details>``` elements.
+The script uses the `load` event to polyfill the `<details>` elements.
 
 If you load HTML fragments dynamically, e.g. in a single page application, 
 then you must call the polyfill after loading the HTML.
@@ -71,7 +71,7 @@ then you must call the polyfill after loading the HTML.
 polyfillDetails(content);
 ```
 
-Where ```content``` is the parent node of the loaded HTML fragment.
+Where `content` is the parent node of the loaded HTML fragment.
 
 
 ## Notes
@@ -113,9 +113,9 @@ details[open] > *:not(summary) {
 ```
 
 The polyfill does not preserve the child elements layout when toggeling the details.
-Also, there is no guarantee that a browser's native implementation of the ```<details>``` element will
+Also, there is no guarantee that a browser's native implementation of the `<details>` element will
 respect it's child elements layout when toggeling the details. To preserve the child elements layout,
-you should always wrap the child elements inside a block element, e.g. ```<div>, <article>, <section>``` etc.
+you should always wrap the child elements inside a block element, e.g. `<div>, <article>, <section>` etc.
 
 ```html
 <style>
@@ -131,7 +131,7 @@ you should always wrap the child elements inside a block element, e.g. ```<div>,
 </details>
 ```
 
-### Credits: The ```<details>``` polyfill is partly based on/inspired by the following sources:
+### Credits: The `<details>` polyfill is partly based on/inspired by the following sources:
 * https://github.com/jordanaustin/Details-Expander
 * https://github.com/chemerisuk/better-details-polyfill
 * http://codepen.io/stevef/pen/jiCBE
